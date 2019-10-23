@@ -35,7 +35,8 @@ def run(rs):
 
 	rng = np.random.RandomState(rs)
 
-	#Load data (first download the data file into the working directory)
+	# Load data (first download the data file into the working directory)
+	# Download the file at: https://archive.ics.uci.edu/ml/machine-learning-databases/00371/NIPS_1987-2015.csv
 	path = 'NIPS_1987-2015.csv'
 	data = np.array(pd.read_csv(path, header=0, index_col=0))
 

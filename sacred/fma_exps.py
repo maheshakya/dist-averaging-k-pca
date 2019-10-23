@@ -34,7 +34,9 @@ def run(rs):
     rng = np.random.RandomState(rs)
 
 
-    #Load data (first download the data file into the working directory)
+    # Load data (first download the data file into the working directory)
+    # Download the  fma_metadata.zip file from https://github.com/mdeff/fma
+    # Extract features.csv file from fma_metadata.zip
 	music_file_path = 'features.csv'
 	original = np.array(pd.read_csv(music_file_path, index_col=0, header=[0, 1, 2]))
 	n_samples = int(original.shape[0]/5)
