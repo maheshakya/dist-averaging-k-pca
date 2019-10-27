@@ -3,6 +3,7 @@
 ## Requirements:
 	- Python 2.7
 	- numpy
+	- scipy
 	- scikit-learn
 	- matplotlib
 	- pandas
